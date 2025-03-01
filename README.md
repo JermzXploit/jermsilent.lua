@@ -1,5 +1,5 @@
 --[[
-   leak by khen.cc
+   leak by jermz.lol
    join for more script
    https://discord.gg/UgQAPcBtpy
 ]]--
@@ -99,7 +99,7 @@ TextButton.BorderSizePixel = 0
 TextButton.Position = UDim2.new(0.1, 0, 0.1, 0)
 TextButton.Size = UDim2.new(0.8, 0, 0.8, 0) 
 TextButton.Font = Enum.Font.Arcade
-TextButton.Text = "Hax.lol Off"
+TextButton.Text = "Jermz.lol Off"
 TextButton.TextColor3 = Color3.fromRGB(255, 0, 0) 
 TextButton.TextScaled = true
 TextButton.TextSize = 11.000
@@ -107,14 +107,14 @@ TextButton.TextWrapped = true
 
 TextButton.MouseButton1Click:Connect(function()
     CamlockState = not CamlockState
-    TextButton.Text = CamlockState and "Hax.lol On" or "Hax.lol Off"
+    TextButton.Text = CamlockState and "Jermz.lol On" or "Jermz.lol Off"
     
     if CamlockState then
         enemy = FindNearestEnemy()
         if enemy then
             highlightInstance = createHighlight(enemy)
             StarterGui:SetCore("SendNotification", {
-                Title = "Hax.lol ✅",
+                Title = “jermz.lol ✅",
                 Text = "🎯: " .. enemy.DisplayName,
                 Duration = 3
             })
@@ -149,7 +149,7 @@ RunService.RenderStepped:Connect(function(deltaTime)
 end)
 
 StarterGui:SetCore("SendNotification", {
-    Title = "Hax.lol loaded🤑",
-    Text = "made by veervegoat on dc🐐",
+    Title = "Jermz.lol is fucking loaded",
+    Text = "made by 2dk_jermz on dc🐐",
     Duration = 5
 })
